@@ -30,7 +30,7 @@ https://RivantiyORnxlfexx.github.io/rivanityx-legal/
 
 Die Seiten wären dann voraussichtlich unter `/privacy.html` und `/terms.html` erreichbar. Diese URLs sind bis zur Aktivierung und Prüfung nicht als live zu verstehen.
 
-Zur manuellen Aktivierung: Im Repository unter **Settings > Pages** bei **Build and deployment** die Bereitstellung aus einem Branch wählen, `main` und den Ordner `/(root)` einstellen und speichern. Da `index.html`, `privacy.html`, `terms.html` und `style.css` im Repository-Stamm liegen, ist dafür kein Build-Schritt erforderlich.
+Der Workflow `.github/workflows/deploy-pages.yml` veröffentlicht die statische Website bei jedem Push auf `main` und kann GitHub Pages dafür konfigurieren. Die Pages-API war über die aktuelle Entwicklungsumgebung nicht direkt verfügbar; der Workflow verwendet dafür die vorgesehenen Pages-Berechtigungen. Falls Repository- oder Organisationsrichtlinien GitHub Actions oder Pages blockieren, muss ein Repository-Administrator Pages unter **Settings > Pages** freigeben.
 
 ## Discord Developer Portal
 
