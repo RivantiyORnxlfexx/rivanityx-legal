@@ -30,7 +30,7 @@ https://RivantiyORnxlfexx.github.io/rivanityx-legal/
 
 Die Seiten wären dann voraussichtlich unter `/privacy.html` und `/terms.html` erreichbar. Diese URLs sind bis zur Aktivierung und Prüfung nicht als live zu verstehen.
 
-Der Workflow `.github/workflows/deploy-pages.yml` veröffentlicht die statische Website bei jedem Push auf `main` und kann GitHub Pages dafür konfigurieren. Die Pages-API war über die aktuelle Entwicklungsumgebung nicht direkt verfügbar; der Workflow verwendet dafür die vorgesehenen Pages-Berechtigungen. Falls Repository- oder Organisationsrichtlinien GitHub Actions oder Pages blockieren, muss ein Repository-Administrator Pages unter **Settings > Pages** freigeben.
+Der Workflow `.github/workflows/deploy-pages.yml` veröffentlicht die Website bei Änderungen an den Site-Dateien auf `main`. Die einmalige Erstellung der Pages-Site wurde von GitHub für das verfügbare `GITHUB_TOKEN` abgelehnt. Bitte unter **Settings > Pages** bei **Build and deployment** als Quelle **GitHub Actions** auswählen und speichern. Danach den Workflow unter **Actions > Deploy static site to GitHub Pages > Run workflow** starten. Organisationsrichtlinien können diese Schritte zusätzlich beschränken.
 
 ## Discord Developer Portal
 

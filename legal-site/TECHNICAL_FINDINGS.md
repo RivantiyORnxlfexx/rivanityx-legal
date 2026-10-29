@@ -14,6 +14,7 @@ Daher war keine Prüfung der tatsächlichen Laufzeitverarbeitung des Bots mögli
 - Im Repository sind statische HTML-Dateien für Datenschutz und Nutzungsbedingungen vorhanden. Sie enthalten Textvorlagen und Platzhalter.
 - Der aktuelle Dateibaum enthält keine HTML-Startseite, CSS-Datei, Bot-Anwendung, Datenbank, Migrationen, Konfiguration, Tests oder GitHub-Actions-/Pages-Workflow.
 - Die GitHub-Pages-API meldet für dieses Repository `404 Not Found`. Zum Prüfzeitpunkt ist daher keine veröffentlichte Pages-Site über diese Repository-Konfiguration nachweisbar.
+- Ein Pages-Deploy wurde über GitHub Actions versucht. Der Lauf scheiterte beim Anlegen der Pages-Site mit `Resource not accessible by integration`, obwohl der Workflow `pages: write` anfordert. Eine einmalige Auswahl von **GitHub Actions** unter **Settings > Pages** ist mit den verfügbaren Rechten nicht automatisierbar.
 - Der vorhandene Entwurf `terms.html` nennt Moderationsfunktionen und Warnungen/Bans. Diese Aussagen werden durch keinen im Repository verfügbaren Bot-Code belegt. Der Entwurf enthält außerdem einen verbliebenen doppelten Abschnitt „7. Schlussbestimmungen“.
 - Die vorhandene `privacy.html` ist eine allgemeine Vorlage und dokumentiert keine konkret verifizierte Verarbeitung.
 
